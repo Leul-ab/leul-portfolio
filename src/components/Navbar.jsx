@@ -90,7 +90,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="cv-btn"
-          onClick={() => window.open("/LEUL_ABERA_CV.pdf", "_blank")}
+          onClick={() => window.open("/Leul_Abera_CV.pdf", "_blank")}
         >
           View CV
         </motion.li>
