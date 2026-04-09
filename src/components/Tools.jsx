@@ -7,8 +7,7 @@ const languages = [
   { name: "PHP", logo: "/icons/PHP.svg" },
   { name: "Java", logo: "/icons/Java.svg" },
   { name: "C++", logo: "/icons/Cplus.svg" },
-  { name: "HTML5", logo: "/icons/HTML5.svg" },
-  { name: "CSS3", logo: "/icons/CSS3.svg" }
+    { name: "React", logo: "/icons/React.svg" },
 ];
 
 const tools = [
@@ -16,12 +15,9 @@ const tools = [
   { name: "Swagger", logo: "/icons/Swagger.svg" },
   { name: "JWT Auth", logo: "/icons/jwt.png" },
   { name: "PostgreSQL", logo: "/icons/PostgresSQL.svg" },
-  { name: "MySQL", logo: "/icons/MySQL.svg" },
-  { name: "React", logo: "/icons/React.svg" },
   { name: "GitHub", logo: "/icons/github.svg" },
   { name: "Git", logo: "/icons/Git.png" },
   { name: "Docker", logo: "/icons/Docker.png" },
-  { name: "Visual Studio", logo: "/icons/mvs.png" }
 ];
 
 const Tools = () => {

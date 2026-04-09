@@ -16,6 +16,7 @@ body, html, #root {
 
 /* ---------- App Container & Video ---------- */
 .app-container {
+  background-color: #050505;
   position: relative;
   height: 100%;
   width: 100%;
@@ -30,6 +31,7 @@ body, html, #root {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: #050505;
   z-index: 0;
 }
 
