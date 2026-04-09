@@ -5,7 +5,7 @@ const projects = [
   {
     title: "NIB Insurance API",
     description: "C#, .NET backend for managing insurance policies & claims.",
-    image: "/nibinsurance.png",
+    image: "/projects/nibinsurance.webp",
     tools: ["C#", ".NET", "PostgreSQL", "JWT Auth", "Swagger"],
     github: "https://github.com/Leul-ab/NIB-Insurance",
   },
@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Arifmenu API",
     description: "C#, .NET + Layered Architecture project with CQRS and JWT auth.",
-    image: "/arifmenu.png",
+    image: "/projects/arifmenu.webp",
     tools: [".NET", "Entity Framework", "PostgreSQL", "Swagger"],
     github: "https://github.com/Leul-ab/ArifMenu",
   },
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "E-Commerce Backend",
     description: "Laravel + MySQL backend for managing products & orders.",
-    image: "/projects/E-commerce.jpg",
+    image: "/projects/E-commerce.webp",
     tools: ["Laravel", "MySQL", "JWT Auth"],
   },
   
