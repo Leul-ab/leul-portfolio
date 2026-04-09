@@ -1,0 +1,44 @@
+import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const Footer = () => {
+  const socialLinks = [
+    { icon: <FaGithub />, url: "https://github.com/yourusername" },
+    { icon: <FaLinkedin />, url: "https://linkedin.com/in/yourusername" },
+    { icon: <FaEnvelope />, url: "mailto:youremail@example.com" },
+  ];
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <footer className="footer">
+      <div className="footer-socials">
+        {socialLinks.map((link, index) => (
+          <motion.a
+            key={index}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            {link.icon}
+          </motion.a>
+        ))}
+      </div>
+      <p>© {new Date().getFullYear()} Leul Abera. All rights reserved.</p>
+      <motion.button
+        className="back-to-top"
+        onClick={scrollToTop}
+        whileHover={{ scale: 1.1 }}
+      >
+        ↑ Back to Top
+      </motion.button>
+    </footer>
+  );
+};
+
+export default Footer;
