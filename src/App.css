@@ -170,7 +170,7 @@ h1.profile-title {
     top: auto;
     bottom: 2rem; /* Move to bottom on mobile for thumb-friendly reach */
     right: auto;
-    left: 40%;
+    left: 35%;
     transform: translateX(-50%);
     padding: 0.6rem 1rem;
     gap: 1.5rem;
@@ -920,17 +920,31 @@ h1.profile-title {
   }
 }
 
+
+
+/* Specific targeting for iPhone SE and smaller devices */
 @media (max-width: 480px) {
   .navbar {
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  .navbar ul {
+    gap: 0.4rem; /* Tighten the gap significantly */
+    justify-content: space-around; /* Distribute space evenly */
   }
 
   .navbar li {
-    padding: 0.3rem 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.75rem; /* Drop font size slightly */
+    padding: 0.2rem 0.4rem;
+    white-space: nowrap; /* Prevent text from wrapping to two lines */
+  }
+
+  .cv-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    /* Optional: If it's still too cramped, consider shortening "View CV" to just "CV" */
   }
 }
-
 
 
 
