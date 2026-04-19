@@ -85,7 +85,7 @@ const Navbar = () => {
           </motion.li>
         ))}
 
-        {/* Repurposed Button */}
+        {/* cv Button */}
         
 
         <motion.div

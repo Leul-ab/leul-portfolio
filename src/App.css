@@ -611,49 +611,67 @@ h1.profile-title {
    ========================================================================== */
 
 /* Container centered now that photo is gone */
-.experiance-container {
-  display: flex;
-  justify-content: center;
+.dual-container {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr; /* Two halves with the line in the middle */
+  gap: 3rem;
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-top: 3rem;
+  max-width: 1100px; /* Increased width to accommodate two columns */
+  margin: 3rem auto 0 auto;
+  position: relative;
+}
+
+.history-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-label {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.vertical-line {
+  background: linear-gradient(to bottom, #ff00cc, #3333ff, #00ffd5);
+  height: 100%;
+  width: 2px;
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(51, 51, 255, 0.4);
 }
 
 /* Experiance List Layout */
 .experiance-list {
   list-style: none;
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding-left: 0;
+  padding: 0;
   color: #fff;
-  text-align: left; /* Kept left-aligned for readability */
 }
 
 /* Individual Experiance Card */
 .experiance-list li {
   background: rgba(255, 255, 255, 0.07);
   border-radius: 1rem;
-  padding: 1.1rem; /* Increased padding for better internal spacing */
+  padding: 1.1rem;
   backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 100%;
 }
 
 /* Card Hover Glow Effect */
 .experiance-list li:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(255, 16, 179, 0.5),
-              0 0 30px rgba(51, 51, 255, 0.4),
-              0 0 20px rgba(0, 255, 213, 0.3);
+  box-shadow: 0px 10px 20px rgba(255, 16, 179, 0.4),
+              0 0 20px rgba(51, 51, 255, 0.3);
 }
 
-/* Role Title with Gradient */
 .experiance-list h3 {
-  font-size: 1rem; /* Adjusted for better visibility */
-  
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
   background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffd5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -661,59 +679,35 @@ h1.profile-title {
 
 /* Company and Duration line */
 .company {
-  font-size: 1rem;
+  font-size: 0.95rem;
   opacity: 0.8;
   font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
-/* Description Text */
 .experiance-list span {
-  display: block; /* Ensures it behaves like a paragraph */
-  font-size: 0.9rem;
-  line-height: 1.5rem;
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
   opacity: 0.9;
 }
 
 
 
-@media (max-width: 768px) {
-  .experiance-container {
-    width: 95%;
+@media (max-width: 900px) {
+  .dual-container {
+    grid-template-columns: 1fr; /* Stack on top of each other */
+    gap: 2rem;
   }
 
-  .experiance-list {
-    font-size: 1rem;
-    text-align: center;
-    padding: 0 1rem;
+  .vertical-line {
+    display: none; /* Hide line on mobile */
   }
-}
 
-@media (max-width: 480px) {
-  .experiance-list h3 {
-    font-size: 1rem;
-  }
-  
-  .experiance-list span {
-    font-size: 0.85rem;
-  }
-}
-
-.experiance-list {
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
-
-@media (max-width: 768px) {
-  .experiance-list {
-    font-size: 1rem;
-    line-height: 1.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .experiance-list {
-    font-size: 0.9rem;
-    line-height: 1.6rem;
+  .column-label {
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-left: 1rem;
   }
 }
 

@@ -8,6 +8,7 @@ import Experiance from "./components/Experiance";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ParticlesBackground from "./components/ParticlesBackground";
+import { motion } from "framer-motion";
 
 function App(){
   return(
