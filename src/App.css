@@ -10,7 +10,7 @@ body, html, #root {
   scroll-behavior: smooth;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   overflow-x: hidden;
 }
 
@@ -31,7 +31,7 @@ body, html, #root {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: #050505;
+  background: radial-gradient(circle at center, #010120 0%, #000000 100%);
   z-index: 0;
 }
 
@@ -370,7 +370,7 @@ h1.profile-title {
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffd5);
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;

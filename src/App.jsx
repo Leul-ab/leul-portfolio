@@ -15,7 +15,7 @@ function App(){
     <div className="app-container">
       {/* Background Video */}
       <video autoPlay loop muted playsInline className="bg-video">
-        <source rel="preload" src="/projects/space-bg.webm" type="video/webm" />
+        <source rel="preload" src="/projects/spaace-bg.webm" type="video/webm" />
       </video>
 
       {/* Floating Particles */}
