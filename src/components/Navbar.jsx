@@ -86,14 +86,7 @@ const Navbar = () => {
         ))}
 
         {/* Repurposed Button */}
-        <motion.li
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="cv-btn"
-          onClick={() => window.open("/Leul_Abera_CV.pdf", "_blank")}
-        >
-          View CV
-        </motion.li>
+        
 
         <motion.div
           className="navbar-underline"
