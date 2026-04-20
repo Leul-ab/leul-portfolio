@@ -7,6 +7,12 @@ const Navbar = () => {
 
   const ulRef = useRef(null);
   const navItems = ["profile", "experiance", "tools", "projects"];
+  const navLabels = {
+    profile:    "Profile",
+    experiance: "Journey",
+    tools:      "Skills",
+    projects:   "Projects",
+  };
 
   /* =========================
       Intersection Observer Logic (Same as before)
@@ -81,7 +87,7 @@ const Navbar = () => {
             className={active === id ? "active" : ""}
             onClick={() => scrollToSection(id)}
           >
-            {id.charAt(0).toUpperCase() + id.slice(1)}
+            {navLabels[id]}
           </motion.li>
         ))}
 
