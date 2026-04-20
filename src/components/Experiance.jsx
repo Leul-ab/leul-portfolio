@@ -79,7 +79,7 @@ const Experience = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        History
+        Journey
       </motion.h2>
 
       <div className="dual-container">
