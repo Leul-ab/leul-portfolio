@@ -2,22 +2,24 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const languages = [
-  { name: "C#",         logo: "/icons/Csharp.svg" },
+  { name: "C#", logo: "/icons/Csharp.svg" },
   { name: "JavaScript", logo: "/icons/JavaScript.svg" },
-  { name: "PHP",        logo: "/icons/PHP.svg" },
-  { name: "Java",       logo: "/icons/Java.svg" },
-  { name: "C++",        logo: "/icons/Cplus.svg" },
-  { name: "React",      logo: "/icons/React.svg" },
+  { name: "PHP", logo: "/icons/PHP.svg" },
+  { name: "Java", logo: "/icons/Java.svg" },
+  { name: "C++", logo: "/icons/Cplus.svg" },
+  { name: "React", logo: "/icons/React.svg" },
 ];
 
 const tools = [
-  { name: ".NET Core",  logo: "/icons/NET.png" },
-  { name: "Swagger",    logo: "/icons/Swagger.svg" },
-  { name: "JWT Auth",   logo: "/icons/jwt.png" },
+  { name: ".NET Core", logo: "/icons/NET.png" },
+  { name: "Laravel", logo: "/icons/Laravel.svg" },
+  { name: "Node.Js", logo: "/icons/Node.js.svg" },
+  { name: "Swagger", logo: "/icons/Swagger.svg" },
+  { name: "JWT Auth", logo: "/icons/jwt.png" },
   { name: "PostgreSQL", logo: "/icons/PostgresSQL.svg" },
-  { name: "GitHub",     logo: "/icons/github.svg" },
-  { name: "Git",        logo: "/icons/Git.png" },
-  { name: "Docker",     logo: "/icons/Docker.png" },
+  { name: "GitHub", logo: "/icons/github.svg" },
+  { name: "Git", logo: "/icons/Git.png" },
+  { name: "Docker", logo: "/icons/Docker.png" },
 ];
 
 const BadgeRow = ({ items }) => (

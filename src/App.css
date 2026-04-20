@@ -164,12 +164,11 @@ h1.profile-title {
 }
 
 .profile-description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   max-width: 750px;
   margin: 1.5rem auto;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  /* Makes text "float" over the video */
 }
 
 .profile-social-links a {
@@ -454,14 +453,12 @@ h1.profile-title {
 .tools-divider {
   height: 2px;
   border-radius: 2px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #ff00cc 20%,
-    #3333ff 50%,
-    #00ffd5 80%,
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      #ff00cc 20%,
+      #3333ff 50%,
+      #00ffd5 80%,
+      transparent);
   box-shadow: 0 0 12px rgba(51, 51, 255, 0.4);
   margin: 0.5rem 0;
 }
@@ -639,13 +636,11 @@ h1.profile-title {
 
 /* Line fades out at the bottom to suggest "more to come" */
 .vertical-line {
-  background: linear-gradient(
-    to bottom,
-    #ff00cc,
-    #3333ff 40%,
-    #00ffd5 70%,
-    transparent 100%
-  );
+  background: linear-gradient(to bottom,
+      #ff00cc,
+      #3333ff 40%,
+      #00ffd5 70%,
+      transparent 100%);
   height: 100%;
   width: 2px;
   border-radius: 2px;
@@ -804,14 +799,12 @@ h1.profile-title {
     display: block;
     height: 2px;
     border-radius: 2px;
-    background: linear-gradient(
-      to right,
-      transparent,
-      #ff00cc 20%,
-      #3333ff 50%,
-      #00ffd5 80%,
-      transparent
-    );
+    background: linear-gradient(to right,
+        transparent,
+        #ff00cc 20%,
+        #3333ff 50%,
+        #00ffd5 80%,
+        transparent);
     box-shadow: 0 0 12px rgba(51, 51, 255, 0.4);
     margin: 1.8rem 0;
   }

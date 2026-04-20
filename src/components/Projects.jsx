@@ -6,10 +6,10 @@ const projects = [
     title: "NIB Insurance API",
     description: "C#, .NET backend for managing insurance policies & claims.",
     image: "/projects/nibinsurance.webp",
-    tools: ["C#", ".NET", "PostgreSQL", "JWT Auth", "Swagger"],
+    tools: ["C#", ".NET", "PostgreSQL", "JWT Auth", "Swagger", "React"],
     github: "https://github.com/Leul-ab/NIB-Insurance",
   },
-  
+
   {
     title: "Arifmenu API",
     description: "C#, .NET + Layered Architecture project with CQRS and JWT auth.",
@@ -17,14 +17,14 @@ const projects = [
     tools: [".NET", "Entity Framework", "PostgreSQL", "Swagger"],
     github: "https://github.com/Leul-ab/ArifMenu",
   },
-  
+
   {
     title: "E-Commerce Backend",
     description: "Laravel + MySQL backend for managing products & orders.",
     image: "/projects/E-commerce.webp",
     tools: ["Laravel", "MySQL", "JWT Auth"],
   },
-  
+
 ];
 
 const Projects = () => {
@@ -55,10 +55,10 @@ const Projects = () => {
             viewport={{ once: false }}
             transition={{ duration: 0.5, delay: index * 0.3 }}
           >
-            <a 
-              href={project.github} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
               className="project-link"
             >
               <img

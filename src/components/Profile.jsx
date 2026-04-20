@@ -50,7 +50,7 @@ const Profile = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          Backend Developer | API Designer | Database Specialist
+          Full stack Developer | API Designer | Database Specialist
         </motion.p>
 
         {/* Bio Description */}
@@ -61,10 +61,17 @@ const Profile = () => {
           transition={{ duration: 1, delay: 0.8 }}
           style={{ lineHeight: '1.8', letterSpacing: '0.5px' }} // Added for readability
         >
-          High-performance Backend Developer specializing in building robust, scalable systems
-          with <span style={{ color: '#00ffd5', fontWeight: 'bold' }}>.NET 8/9/10</span>.
-          I design secure, production-ready APIs using <span style={{ color: '#ff00cc', fontWeight: 'bold' }}>Clean Architecture </span>
-          and PostgreSQL, ensuring long-term maintainability and seamless integration.
+          High-performance Fullstack Developer specializing in building robust, scalable systems
+          with <span style={{ color: '#00ffd5', fontWeight: 'bold' }}> .NET</span>,
+          <span style={{ color: '#00ffd5', fontWeight: 'bold' }}> Node.js</span>, and
+          <span style={{ color: '#00ffd5', fontWeight: 'bold' }}> Laravel</span> for backend development,
+          and <span style={{ color: '#00ffd5', fontWeight: 'bold' }}> React</span> for modern frontend applications.
+
+          I design secure, production-ready APIs using
+          <span style={{ color: '#ff00cc', fontWeight: 'bold' }}> Clean Architecture</span>,
+          with experience in <span style={{ color: '#ff00cc', fontWeight: 'bold' }}> PostgreSQL</span>,
+          and scalable system design, ensuring long-term maintainability
+          and seamless integration across platforms.
         </motion.p>
       </motion.section>
     </>
