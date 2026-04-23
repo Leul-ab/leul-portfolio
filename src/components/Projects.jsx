@@ -8,6 +8,7 @@ const projects = [
     image: "/projects/nibinsurance.webp",
     tools: ["C#", ".NET", "PostgreSQL", "JWT Auth", "Swagger", "React"],
     github: "https://github.com/Leul-ab/NIB-Insurance",
+    demo: "https://nib-insurance-1.onrender.com",
   },
 
   {
@@ -76,6 +77,34 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+
+              {project.demo && (
+                <div className="project-actions">
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="demo-btn"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
+                    </svg>
+                    Demo API
+                  </a>
+                </div>
+              )}
             </a>
           </motion.div>
         ))}

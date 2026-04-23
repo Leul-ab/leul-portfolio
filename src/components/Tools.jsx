@@ -12,8 +12,8 @@ const languages = [
 
 const tools = [
   { name: ".NET Core", logo: "/icons/NET.png" },
-  { name: "Laravel", logo: "/icons/Laravel.svg" },
-  { name: "Node.Js", logo: "/icons/Node.js.svg" },
+  { name: "Laravel", logo: "/icons/Laravel.svg", style: { transform: "scale(1.2)" } },
+  { name: "Node.Js", logo: "/icons/Node.js.svg", style: { transform: "scale(1.2)" } },
   { name: "Swagger", logo: "/icons/Swagger.svg" },
   { name: "JWT Auth", logo: "/icons/jwt.png" },
   { name: "PostgreSQL", logo: "/icons/PostgresSQL.svg" },
@@ -26,7 +26,7 @@ const BadgeRow = ({ items }) => (
   <div className="tools-badge-row">
     {items.map((item, index) => (
       <div className="tools-badge" key={index}>
-        <img src={item.logo} alt={item.name} className="tools-badge-icon" />
+        <img src={item.logo} alt={item.name} className="tools-badge-icon" style={item.style} />
         <span>{item.name}</span>
       </div>
     ))}
