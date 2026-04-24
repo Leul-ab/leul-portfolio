@@ -63,7 +63,7 @@ html,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1.8rem;
   text-align: center;
   scroll-snap-align: start;
 }
@@ -80,10 +80,11 @@ html,
 /* Section Titles */
 h1,
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   margin-top: 1rem;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
+
 
 
 
@@ -123,7 +124,7 @@ h1.profile-title {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -513,9 +514,10 @@ h1.profile-title {
 .project-card:hover {
   transform: translateY(-10px);
   background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.3);
-  /* Refined Glow: Added a subtle inner glow + the neon outer glow */
+  border-color: rgba(0, 255, 213, 0.4);
+  /* Layered glow: teal outer + purple/blue inner */
   box-shadow:
+    0 10px 30px rgba(0, 255, 213, 0.2),
     0px 15px 35px rgba(55, 102, 255, 0.2),
     0px 0px 15px rgba(198, 99, 244, 0.2);
 }
@@ -579,10 +581,7 @@ h1.profile-title {
   transition: all 0.3s ease;
 }
 
-.project-card:hover {
-  box-shadow: 0 10px 30px rgba(0, 255, 213, 0.2);
-  border: 1px solid rgba(0, 255, 213, 0.4);
-}
+
 
 /* On card hover, light up the badges */
 .project-card:hover .tool-badge {
@@ -623,7 +622,7 @@ h1.profile-title {
     gap: 1.5rem;
     max-width: 440px;
     padding: 0 1rem;
-    margin: 2rem auto 0;
+    margin: 1rem auto 0;
   }
 
   .project-card {

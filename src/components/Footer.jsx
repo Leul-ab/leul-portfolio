@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <FaGithub />, url: "https://github.com/yourusername" },
-    { icon: <FaLinkedin />, url: "https://linkedin.com/in/yourusername" },
-    { icon: <FaEnvelope />, url: "mailto:youremail@example.com" },
+    { icon: <FaGithub />, url: "https://github.com/Leul-ab" },
+    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/leul-a-0509a9279/" },
+    { icon: <FaEnvelope />, url: "mailto:leulabera321@gmail.com" },
   ];
 
   const scrollToTop = () => {

@@ -69,6 +69,7 @@ const Projects = () => {
               />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+            </a>
 
               <div className="project-tools">
                 {project.tools.map((tool, i) => (
@@ -85,7 +86,6 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="demo-btn"
-                    onClick={(e) => e.stopPropagation()}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,6 @@ const Projects = () => {
                   </a>
                 </div>
               )}
-            </a>
           </motion.div>
         ))}
       </div>
