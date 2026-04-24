@@ -20,10 +20,11 @@ const projects = [
   },
 
   {
-    title: "E-Commerce Backend",
-    description: "Laravel + MySQL backend for managing products & orders.",
+    title: "Spendly API",
+    description: "Node.js, express.js backend API project for personal finance management",
     image: "/projects/E-commerce.webp",
-    tools: ["Laravel", "MySQL", "JWT Auth"],
+    tools: ["Node.js", "Express.js", "PostgreSQL", "JWT Auth", "Prisma"],
+    github: "https://github.com/Leul-ab/SpendlyAPI",
   },
 
 ];
@@ -71,40 +72,40 @@ const Projects = () => {
               <p>{project.description}</p>
             </a>
 
-              <div className="project-tools">
-                {project.tools.map((tool, i) => (
-                  <span key={i} className="tool-badge">
-                    {tool}
-                  </span>
-                ))}
-              </div>
+            <div className="project-tools">
+              {project.tools.map((tool, i) => (
+                <span key={i} className="tool-badge">
+                  {tool}
+                </span>
+              ))}
+            </div>
 
-              {project.demo && (
-                <div className="project-actions">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="demo-btn"
+            {project.demo && (
+              <div className="project-actions">
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="demo-btn"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
-                    </svg>
-                    Demo API
-                  </a>
-                </div>
-              )}
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
+                  </svg>
+                  Demo API
+                </a>
+              </div>
+            )}
           </motion.div>
         ))}
       </div>
