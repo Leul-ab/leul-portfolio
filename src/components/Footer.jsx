@@ -9,10 +9,6 @@ const Footer = () => {
     { icon: <FaEnvelope />, url: "mailto:leulabera321@gmail.com" },
   ];
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <footer className="footer">
       <div className="footer-socials">
@@ -30,14 +26,8 @@ const Footer = () => {
         ))}
       </div>
       <p>© {new Date().getFullYear()} Leul Abera. All rights reserved.</p>
-      <motion.button
-        className="back-to-top"
-        onClick={scrollToTop}
-        whileHover={{ scale: 1.1 }}
-      >
-        ↑ Back to Top
-      </motion.button>
     </footer>
+
   );
 };
 
