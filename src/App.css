@@ -33,7 +33,7 @@ html,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background: radial-gradient(circle at center, #010120 0%, #000000 100%);
+  background: radial-gradient(circle at center, #010125 0%, #000000 100%);
   z-index: 0;
 }
 

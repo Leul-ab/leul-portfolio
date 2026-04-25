@@ -13,7 +13,7 @@ const experiences = [
 
 const education = [
   {
-    degree: "Bachelor's in Computer Science",
+    degree: "Bachelor's Degree in Computer Science",
     institution: "St Mary's University",
     duration: "2021 – 2026",
     description: "Focusing on Software Engineering, Backend Systems, and Database Management.",
