@@ -16,7 +16,7 @@ const projects = [
     description: "C#, .NET + Layered Architecture project with CQRS and JWT auth.",
     image: "/projects/arifmenu.webp",
     tools: [".NET", "Entity Framework", "PostgreSQL", "Swagger"],
-    github: "https://github.com/Leul-ab/ArifMenu",
+
   },
 
   {
