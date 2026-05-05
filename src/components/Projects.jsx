@@ -15,16 +15,17 @@ const projects = [
     title: "Arifmenu API",
     description: "C#, .NET + Layered Architecture project with CQRS and JWT auth.",
     image: "/projects/arifmenu.webp",
-    tools: [".NET", "Entity Framework", "PostgreSQL", "Swagger"],
+    tools: [".NET", "Entity Framework", "PostgreSQL", "Swagger", "JWT Auth"],
 
   },
 
   {
-    title: "Spendly API",
-    description: "Node.js, express.js backend API project for personal finance management",
+    title: "Spendly",
+    description: "Full stack web app for personal finance management",
     image: "/projects/E-commerce.webp",
-    tools: ["Node.js", "Express.js", "PostgreSQL", "JWT Auth", "Prisma"],
-    github: "https://github.com/Leul-ab/SpendlyAPI",
+    tools: ["Node.js", "Express.js", "PostgreSQL", "JWT Auth", "Prisma", "React", "tailwind"],
+    github: "https://github.com/Leul-ab/Spendly",
+    demo: "https://spendly-beryl-two.vercel.app",
   },
 
 ];
