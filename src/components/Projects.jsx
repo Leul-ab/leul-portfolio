@@ -17,6 +17,7 @@ const projects = [
     image: "/projects/arifmenu.webp",
     tools: [".NET", "Entity Framework", "PostgreSQL", "Swagger", "JWT Auth"],
 
+    
   },
 
   {

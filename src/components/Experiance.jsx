@@ -9,6 +9,22 @@ const experiences = [
     description: "Worked on ArifMenu full backend API development using C#, .NET, PostgreSQL and Clean Architecture.",
     tags: ["C#", ".NET", "PostgreSQL", "Clean Architecture"],
   },
+
+  {
+    role: "Full Stack Developer",
+    company: "Ethio Innovation",
+    duration: "2026 – Present",
+    description: "Building web applications for clients and Government institutions.",
+    tags: ["React", "Laravel", "Mysql"],
+  }, 
+
+  {
+    role: "Contract Web Developer",
+    company: "Addis Ketema Governmental Office",
+    duration: "2026",
+    description: "Created web applications for governmental use, using modern technologies.",
+    tags: ["React", "Node.js", "Express.js", "PostgreSQL"],
+  }
 ];
 
 const education = [
